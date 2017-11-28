@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="false">
+
+	<appender name="watson.Utterance" class="ch.qos.logback.core.FileAppender">
+		<file>C:\Users\Administrator\Documents\T world Poc\logback-utterance.txt</file>
+		<append>true</append>
+		<encoder>
+			<pattern>%-30(%date{yyyy-MM-dd HH:mm:ss.SSS, Asia/Seoul}) - %msg%n </pattern>
+		</encoder>
+	</appender>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%-35(%date{yyyy-MM-dd HH:mm:ss.SSS, Asia/Seoul} [%thread])	%-5level %logger{0} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="tiger.spring.web.watson" level="INFO" additivity="true">
+		<appender-ref ref="watson.Utterance" />
+	</logger>
+	
+	<logger name="tiger.spring.web" level="DEBUG" />
+
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>

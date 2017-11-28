@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family:'NanumGothic';
+	src:url("NanumGothic.eot");
+	src:local(""), url("//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff") format("woff");
+}
+
+body {
+	font-family:Candara, Arial, "NanumGothic";
+}
+
+.jumbotron {
+	background-image: url("../img/fire-border-with-white-background-mtr_brd_outline_4_inv.png");
+	background-size: cover;
+}
