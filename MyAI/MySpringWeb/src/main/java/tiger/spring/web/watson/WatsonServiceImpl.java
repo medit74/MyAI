@@ -23,10 +23,10 @@ public class WatsonServiceImpl implements WatsonService  {
 	
 	private static final Logger logger = LoggerFactory.getLogger(WatsonServiceImpl.class);
 	
-	private final String USERNAME 	= "dd23fdb9-33e3-406c-8b37-4624d709a1dc";
-	private final String PASSWORD 	= "JfSYyNCnPvBF";
-	private final String ENDPOINT 	= "https://gateway.aibril-watson.kr/conversation/api";
-	private final String WORKSPACEID= "780c1f2c-0205-460b-833a-ea49c46502b1";	
+	private final String USERNAME 	= "7373c88a-43fe-4f6d-84a3-a30bfbc73fe7";
+	private final String PASSWORD 	= "hSHhIhqx3Ig2";
+	private final String ENDPOINT 	= "https://gateway.aibril-watson.kr/assistant/api";
+	private final String WORKSPACEID= "4e5609c6-265e-4c32-81c4-c5fcc585a911";	   
 	
 	@Autowired
 	private MessageSource messageSource;

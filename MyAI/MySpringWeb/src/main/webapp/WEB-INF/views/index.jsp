@@ -407,11 +407,11 @@
 	        <c:if test="${wcsTextCon=='form:sms.send'}">
 		        $('#smsData').val($('#smsData').val()+final_transcript);
 	        </c:if>
-	        <c:if test="${wcsTextCon!='form:sms.send'}">
+	        <c:if test="${wcsTextCon!='form:sms.send'}"> 
 		        $('#wcsUserInput').val(final_transcript);
 		        $('input[name="wcsInputMethod"]').val("speech");
-		        if(final_transcript != "")
-		        	$("#frmWcsMessage").submit();
+		        //if(final_transcript != "")
+		        	//$("#frmWcsMessage").submit();
 	        </c:if>
 		    };
 			//annyang.abort();	
@@ -426,7 +426,7 @@
 		});
 		
 		function sendWcsMessage() {
-			$("#frmWcsMessage").submit();
+			//$("#frmWcsMessage").submit();
 		}
 		
 		function sendWcsContext(initData) {
